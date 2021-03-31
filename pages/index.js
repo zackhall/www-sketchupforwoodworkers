@@ -1,65 +1,108 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <p className='pt3 px3 t4 center mw-copy mxauto'>
+        Join thousands of woodworkers who have finally gotten over the hump of
+        learning Sketchup to design and layout their next woodworking project!
+      </p>
+      <div className='flex pl3 pt3'>
+        <div className='up1 bps-up2 bpm-up3 pr3'>
+          <ul>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/getting-started-part-1.html'>
+                  <img src='/images/1-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/getting-started-part-1.html'>
+                    Getting Started, Part 1
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/curves-moulding-outliner.html'>
+                  <img src='/images/4-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/curves-moulding-outliner.html'>
+                    Curves, Moulding and the Outliner
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/dimensions-printing.html'>
+                  <img src='/images/7-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/dimensions-printing.html'>
+                    Dimensions and Printing
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <div className='up1 bps-up2 bpm-up3 pr3'>
+          <ul>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/getting-started-part-2.html'>
+                  <img src='/images/2-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/getting-started-part-2.html'>
+                    Getting Started, Part 2
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/moulding-revisited.html'>
+                  <img src='/images/5-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/moulding-revisited.html'>
+                    Moulding Revisited
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div className='up1 bps-up2 bpm-up3 pr3'>
+          <ul>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/dados-rabbets-grooves.html'>
+                  <img src='/images/3-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/dados-rabbets-grooves.html'>
+                    Dados, Rabbets and Grooves
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <a href='/tutorials/joints.html'>
+                  <img src='/images/6-thumb.jpg' />
+                </a>
+                <figcaption className='mt1'>
+                  <a href='/tutorials/joints.html'>Joints, Joints, Joints</a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
   )
 }
