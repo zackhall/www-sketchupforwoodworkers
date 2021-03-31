@@ -44,7 +44,7 @@ const Layout: React.FC<{}> = ({ children }) => {
           </a>
         </p>
       </footer>
-      <script
+      {/* <script
         dangerouslySetInnerHTML={{
           __html: `
           var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -61,7 +61,7 @@ const Layout: React.FC<{}> = ({ children }) => {
           } catch(err) {}
         `,
         }}
-      />
+      /> */}
     </div>
   )
 }
