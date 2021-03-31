@@ -1,13 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import Head from 'next/head'
 
 const Page = () => (
   <>
-    <Helmet>
+    <Head>
       <title>
         Curves, Moulding and the Outliner | Sketchup for Woodworkers
       </title>
-    </Helmet>
+    </Head>
     <div className='p3'>
       <div className='mw-copy'>
         <h1 className='mb2 f-title t8'>Curves, Moulding and the Outliner</h1>

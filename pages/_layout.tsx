@@ -1,10 +1,10 @@
 import react from 'react'
-import { Helmet } from 'react-helmet'
+import Head from 'next/head'
 
 const Layout: React.FC<{}> = ({ children }) => {
   return (
     <div className='f c-fill2'>
-      <Helmet>
+      <Head>
         <title>Sketchup for Woodworkers</title>
         <meta
           content='The internet&#39;s FREE leading online resource for learning Sketchup that is built and run by woodworkers for woodworkers.'
@@ -19,7 +19,7 @@ const Layout: React.FC<{}> = ({ children }) => {
           href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Oswald'
           rel='stylesheet'
         />
-      </Helmet>
+      </Head>
       <header className='px3 py2 bb c-fill1 maple cover c-txt-walnut'>
         <h2 className='f-title medium t8 center bps-left bps-t10 kern1'>
           <a className='kern0' href='/'>
@@ -44,24 +44,6 @@ const Layout: React.FC<{}> = ({ children }) => {
           </a>
         </p>
       </footer>
-      {/* <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        `,
-        }}
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          try {
-            var pageTracker = _gat._getTracker("UA-164680-16");
-            pageTracker._trackPageview();
-          } catch(err) {}
-        `,
-        }}
-      /> */}
     </div>
   )
 }

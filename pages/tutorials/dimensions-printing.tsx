@@ -1,11 +1,11 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import Head from 'next/head'
 
 const Page = () => (
   <>
-    <Helmet>
+    <Head>
       <title>Dimensions and Printing | Sketchup for Woodworkers</title>
-    </Helmet>
+    </Head>
     <div className='p3'>
       <div className='mw-copy'>
         <h1 className='mb2 f-title t8'>Dimensions and Printing</h1>
