@@ -1,6 +1,10 @@
 import Head from 'next/head'
 
 export default function Home() {
+  fetch('/api/hello')
+    .then((res) => res.json())
+    .then((val) => console.log(val))
+
   return (
     <>
       <p className='pt3 px3 t4 center mw-copy mxauto'>
