@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sketchupwoodworkers-dev-225717-authRole",
+      "UnauthRoleArn": "arn:aws:iam::314886084817:role/amplify-sketchupwoodworkers-dev-225717-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::314886084817:role/amplify-sketchupwoodworkers-dev-225717-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sketchupwoodworkers-dev-225717-deployment",
+      "UnauthRoleName": "amplify-sketchupwoodworkers-dev-225717-unauthRole",
+      "StackName": "amplify-sketchupwoodworkers-dev-225717",
+      "StackId": "arn:aws:cloudformation:us-east-1:314886084817:stack/amplify-sketchupwoodworkers-dev-225717/f94eb740-9295-11eb-92a6-0a392ab5a299",
+      "AmplifyAppId": "d125c720fonxhg"
+    },
+    "categories": {
+      "auth": {
+        "sketchupwoodworkersbb94782f": {}
+      }
+    }
+  }
+}
