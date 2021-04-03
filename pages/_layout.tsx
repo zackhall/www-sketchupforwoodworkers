@@ -6,6 +6,7 @@ const Layout: React.FC<{}> = ({ children }) => {
     <div className='f c-fill2'>
       <Head>
         <title>Sketchup for Woodworkers</title>
+        <meta charSet='UTF-8' />
         <meta
           content='The internet&#39;s FREE leading online resource for learning Sketchup that is built and run by woodworkers for woodworkers.'
           name='description'
