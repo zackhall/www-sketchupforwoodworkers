@@ -1,8 +1,6 @@
-export default function Home() {
-  fetch('/api/hello')
-    .then((res) => res.json())
-    .then((val) => console.log(val))
+import Link from 'next/link'
 
+export default function Home() {
   return (
     <>
       <p className='pt3 px3 t4 center mw-copy mxauto'>
@@ -14,65 +12,43 @@ export default function Home() {
           <ul>
             <li className='p2 mb3 c-fill1 shadow1'>
               <figure className='center'>
-                <a href='/tutorials/getting-started-part-1.html'>
-                  <img src='/images/1-thumb.jpg' />
-                </a>
-                <figcaption className='mt1'>
-                  <a href='/tutorials/getting-started-part-1.html'>
-                    Getting Started, Part 1
+                <Link href='/tutorials/getting-started-part-1'>
+                  <a>
+                    <img src='/images/1-thumb.jpg' />
                   </a>
+                </Link>
+                <figcaption className='mt1'>
+                  <Link href='/tutorials/getting-started-part-1'>
+                    <a>Getting Started, Part 1</a>
+                  </Link>
                 </figcaption>
               </figure>
             </li>
             <li className='p2 mb3 c-fill1 shadow1'>
               <figure className='center'>
-                <a href='/tutorials/curves-moulding-outliner.html'>
-                  <img src='/images/4-thumb.jpg' />
-                </a>
-                <figcaption className='mt1'>
-                  <a href='/tutorials/curves-moulding-outliner.html'>
-                    Curves, Moulding and the Outliner
+                <Link href='/tutorials/curves-moulding-outliner'>
+                  <a>
+                    <img src='/images/4-thumb.jpg' />
                   </a>
+                </Link>
+                <figcaption className='mt1'>
+                  <Link href='/tutorials/curves-moulding-outliner'>
+                    <a>Curves, Moulding and the Outliner</a>
+                  </Link>
                 </figcaption>
               </figure>
             </li>
             <li className='p2 mb3 c-fill1 shadow1'>
               <figure className='center'>
-                <a href='/tutorials/dimensions-printing.html'>
-                  <img src='/images/7-thumb.jpg' />
-                </a>
-                <figcaption className='mt1'>
-                  <a href='/tutorials/dimensions-printing.html'>
-                    Dimensions and Printing
+                <Link href='/tutorials/dimensions-printing'>
+                  <a>
+                    <img src='/images/7-thumb.jpg' />
                   </a>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-        <div className='up1 bps-up2 bpm-up3 pr3'>
-          <ul>
-            <li className='p2 mb3 c-fill1 shadow1'>
-              <figure className='center'>
-                <a href='/tutorials/getting-started-part-2.html'>
-                  <img src='/images/2-thumb.jpg' />
-                </a>
+                </Link>
                 <figcaption className='mt1'>
-                  <a href='/tutorials/getting-started-part-2.html'>
-                    Getting Started, Part 2
-                  </a>
-                </figcaption>
-              </figure>
-            </li>
-            <li className='p2 mb3 c-fill1 shadow1'>
-              <figure className='center'>
-                <a href='/tutorials/moulding-revisited.html'>
-                  <img src='/images/5-thumb.jpg' />
-                </a>
-                <figcaption className='mt1'>
-                  <a href='/tutorials/moulding-revisited.html'>
-                    Moulding Revisited
-                  </a>
+                  <Link href='/tutorials/dimensions-printing'>
+                    <a>Dimensions and Printing</a>
+                  </Link>
                 </figcaption>
               </figure>
             </li>
@@ -82,23 +58,61 @@ export default function Home() {
           <ul>
             <li className='p2 mb3 c-fill1 shadow1'>
               <figure className='center'>
-                <a href='/tutorials/dados-rabbets-grooves.html'>
-                  <img src='/images/3-thumb.jpg' />
-                </a>
-                <figcaption className='mt1'>
-                  <a href='/tutorials/dados-rabbets-grooves.html'>
-                    Dados, Rabbets and Grooves
+                <Link href='/tutorials/getting-started-part-2'>
+                  <a>
+                    <img src='/images/2-thumb.jpg' />
                   </a>
+                </Link>
+                <figcaption className='mt1'>
+                  <Link href='/tutorials/getting-started-part-2'>
+                    <a>Getting Started, Part 2</a>
+                  </Link>
                 </figcaption>
               </figure>
             </li>
             <li className='p2 mb3 c-fill1 shadow1'>
               <figure className='center'>
-                <a href='/tutorials/joints.html'>
-                  <img src='/images/6-thumb.jpg' />
-                </a>
+                <Link href='/tutorials/moulding-revisited'>
+                  <a>
+                    <img src='/images/5-thumb.jpg' />
+                  </a>
+                </Link>
                 <figcaption className='mt1'>
-                  <a href='/tutorials/joints.html'>Joints, Joints, Joints</a>
+                  <Link href='/tutorials/moulding-revisited'>
+                    <a>Moulding Revisited</a>
+                  </Link>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div className='up1 bps-up2 bpm-up3 pr3'>
+          <ul>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <Link href='/tutorials/dados-rabbets-grooves'>
+                  <a>
+                    <img src='/images/3-thumb.jpg' />
+                  </a>
+                </Link>
+                <figcaption className='mt1'>
+                  <Link href='/tutorials/dados-rabbets-grooves'>
+                    <a>Dados, Rabbets and Grooves</a>
+                  </Link>
+                </figcaption>
+              </figure>
+            </li>
+            <li className='p2 mb3 c-fill1 shadow1'>
+              <figure className='center'>
+                <Link href='/tutorials/joints'>
+                  <a>
+                    <img src='/images/6-thumb.jpg' />
+                  </a>
+                </Link>
+                <figcaption className='mt1'>
+                  <Link href='/tutorials/joints'>
+                    <a>Joints, Joints, Joints</a>
+                  </Link>
                 </figcaption>
               </figure>
             </li>
