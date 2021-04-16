@@ -1,0 +1,12 @@
+type Registration
+  @model
+  @auth(rules: [{ allow: owner }])
+  @key(
+    name: "registrationsByUserId"
+    fields: ["userId"]
+    queryField: "registrationsByUserId"
+  ) {
+  id: ID!
+  userId: String!
+  courseName: String!
+}
